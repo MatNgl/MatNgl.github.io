@@ -1,0 +1,197 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Responsable de Twitch</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Audit Responsable de Twitch</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#service">Le Service</a></li>
+        <li><a href="#tech-audit">Audit Technique</a></li>
+        <li><a href="#impacts">Impacts</a></li>
+       
+        <li><a href="#analyse">Analyse</a></li>
+        <li><a href="#reco">Recommandations</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro" class="slide">
+      <h2>Introduction</h2>
+      <p>Dans un contexte où les usages numériques sont en constante croissance, les services de streaming en direct comme Twitch occupent une place majeure dans le paysage digital. En 2024, Twitch comptait plus de <strong> 2,55 millions de spectateurs simultanés </strong>, où l'on pouvait interagir en temps réel.Cependant, cet engouement soulève des enjeux environnementaux, techniques et sociétaux importants.</p>
+
+      <p>En s'appuyant sur une analyse technique et fonctionnelle , cet audit à travers le prisme du numérique responsable vise à dégager des pistes concrètes d'optimisation afin de rendre l'expérience utilisateur plus durable, tout en maintenant un haut niveau de qualité de service. </p>
+    </section>
+
+    <section id="service" class="slide">
+      <h2>Présentation du Service</h2>
+      <ul>
+        <li><strong>Fonctionnalité :</strong> Plateforme de streaming vidéo en direct, principalement utilisée pour la diffusion de jeux vidéo, d'émissions en direct, de discussions ou d'activités extérieures plus récemment. Elle permet à tout utilisateur, qu'il soit créateur -streamer- ou simple spectateur -viewer-, de participer à des échanges en temps réel via un système de chat intégré.</li>
+        <li><strong>Unité fonctionnelle :</strong> Visionnage de 30&nbsp;minutes.</li>
+        <li> Twitch utilise les trois <strong> tiers </strong> pour être distribué :
+           
+                <li>Terminaux : utilisés par les streamers et les spectateurs, </li>
+                <li>Réseaux :qui transportent les flux vidéo </li>
+                <li>Datacenters : le traitement, la distribution et le stockage des contenus </li>
+          
+      </ul>
+    </section>
+
+
+    <section id="tech-audit" class="slide">
+      <h2>Audit Technique</h2>
+      <div class="cards metrics-cards">
+        <!-- EcoIndex Card -->
+        <article>
+          <h3>EcoIndex</h3>
+          <div class="metric-score ecoindex-score">G (9/100)</div>
+          <ul>
+            <li>Classement de la page : 457 658 / 472 082</li>
+            <li>Taille transférée : 4,815 Mo</li>
+            <li>Requêtes : 385</li>
+            <li>CO₂ équivalent : 1,7 g</li>
+          </ul>
+          <div class="sub-metrics">
+            <p><strong>Empreinte pour 1 000 visites/mois :</strong></p>
+            <ul>
+              <li>Consommation d'eau : 42,3 L</li>
+              <li>Émissions : 2,82 kgCO₂e</li>
+            </ul>
+          </div>
+          <a href="https://www.ecoindex.fr/resultat/?id=a201d2b3-6f06-4b8e-8c41-9aa164782ca6" target="_blank" class="btn-small">Voir détail</a>
+        </article>
+        <!-- Lighthouse Metrics Card -->
+        <article>
+          <h3>Lighthouse Metrics</h3>
+          <ul class="lighthouse-list">
+            <li><span class="score red">26</span> Performance</li>
+            <li><span class="score green">96</span> Accessibilité</li>
+            <li><span class="score red">43</span> Bonnes pratiques</li>
+            <li><span class="score green">100</span> SEO</li>
+          </ul>
+          <a href="https://lighthouse-metrics.com/lighthouse/checks/71f53c91-75f9-4dc4-bf69-04f67cb53353" target="_blank" class="btn-small">Rapport complet</a>
+        </article>
+      </div>
+      <table class="metrics-table">
+        <thead>
+          <tr><th>Métrique</th><th>Valeur</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>FCP (First Contentful Paint)</td><td>2,4 s</td></tr>
+          <tr><td>SI (Speed Index)</td><td>13,2 s</td></tr>
+          <tr><td>LCP (Largest Contentful Paint)</td><td>20,6 s</td></tr>
+          <tr><td>TBT (Total Blocking Time)</td><td>13,3 s</td></tr>
+          <tr><td>CLS (Cumulative Layout Shift)</td><td>0,15</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="impacts" class="slide impacts-card">
+      <h2>Impacts Environnementaux</h2>
+      <p>Pour 1 000 visites mensuelles :</p>
+      <ul>
+        <li><strong>Consommation d'eau :</strong> 42,3 L (équivalent à ~7 minutes de douche)</li>
+        <li><strong>Émissions CO₂ :</strong> 2,82 kgCO₂e (soit ~14 km en voiture)</li>
+      </ul>
+      <p>Ces impacts soulignent l’importance de réduire le poids et la complexité de la page pour diminuer la consommation de ressources et les émissions de gaz à effet de serre.</p>
+    </section>
+
+    
+    <section id="analyse" class="slide">
+      <h2>Analyse de Conception Responsable</h2>
+      <div class="cards">
+        <article>
+          <h3>Points Forts</h3>
+          <ul>
+            <li>Interface responsive (tout type d'appareils)</li>
+            <li>Service de serveurs interconnectés</li>
+            <li>Support d'accessibilité (navigation, étiquetage)</li>
+            <li>Modération procréative</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Points Faibles</h3>
+          <ul>
+            <li>Bande passante énergivore</li>
+            <li>Poids des pages élevé</li>
+            <li>Performence front-end dégradée (lighthouse)</li>
+            <li>Absence de lazy-loading</li>
+          </ul>
+        </article>
+      </div>
+    </section> 
+
+    <section id="reco" class="slide">
+  <h2>Recommandations</h2>
+<div class="cards recos">
+  <article>
+    <h3>⚙️ Optimisation des ressources</h3>
+    <ul>
+      <li>Activer le lazy-loading des images, vidéos et iframes.</li>
+      <li>Minifier et compresser les fichiers HTML, CSS, JS et SVG.</li>
+      <li>Utiliser des formats d’image modernes (WebP, AVIF) et réduire leur taille.</li>
+      <li>Remplacer les images d’interface par des styles CSS et pictogrammes.</li>
+      <li>Mettre en cache les ressources statiques efficacement.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>📺 Réduction de l’impact du streaming</h3>
+    <ul>
+      <li>Proposer un "mode basse consommation" avec 480p par défaut.</li>
+      <li>Éviter les vidéos en arrière-plan ou animations superflues.</li>
+      <li>Permettre une écoute audio uniquement pour certains contenus (podcast, musique).</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>🧩 Réduction de la complexité et des requêtes</h3>
+    <ul>
+      <li>Limiter l’utilisation de widgets tiers et plugins.</li>
+      <li>Grouper les fichiers CSS et JS pour réduire les appels réseau.</li>
+      <li>Préférer les polices système aux polices web personnalisées.</li>
+      <li>Éviter les carrousels et le scroll infini, préférer la pagination.</li>
+      <li>Simplifier l’interface en supprimant les éléments non essentiels.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>📱 Design et accessibilité</h3>
+    <ul>
+      <li>Concevoir en mobile-first pour une interface plus légère.</li>
+      <li>Améliorer l’accessibilité (contrastes, ARIA, navigation clavier).</li>
+      <li>Proposer un mode sombre adapté aux écrans OLED.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>💡 Sensibilisation et bonnes pratiques</h3>
+    <ul>
+      <li>Inciter les streamers à proposer plusieurs niveaux de qualité de diffusion.</li>
+      <li>Informer les utilisateurs sur l’impact environnemental du streaming haute qualité.</li>
+      <li>Afficher un indicateur d’impact environnemental (eco-score).</li>
+    </ul>
+  </article>
+  </div>
+</section>
+
+
+    <section id="conclusion" class="slide">
+      <h2>Conclusion</h2>
+      <p>En optimisant l’écoconception et l’accessibilité, Twitch peut réduire significativement son empreinte et offrir une meilleure expérience utilisateur.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Audit Responsable | Marie + Thomas  + Boris + Matthéo ❤️ </p>
+  </footer>
+</body>
+</html>
